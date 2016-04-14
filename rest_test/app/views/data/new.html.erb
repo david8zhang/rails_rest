@@ -1,0 +1,13 @@
+<html>
+<head>
+	<title>New Data Entry</title>
+</head>
+<h1>Create a new autometrica entry</h1>
+<body>
+	<%= form_tag("/data/create", method: "post") do %>
+  		<%= label_tag(:scale, "Scale:") %>
+  		<%= text_field_tag(:scale) %>
+  		<%= submit_tag("Submit") %>
+	<% end %>
+</body>
+</html>
